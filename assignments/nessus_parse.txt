@@ -1,0 +1,23 @@
+10841:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="18405" pluginName="Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness" pluginFamily="Windows">
+10919:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="57690" pluginName="Terminal Services Encryption Level is Medium or Low" pluginFamily="Misc.">
+10979:<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
+12316:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="58453" pluginName="Terminal Services Doesn&apos;t Use Network Level Authentication (NLA)" pluginFamily="Misc.">
+12571:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="18405" pluginName="Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness" pluginFamily="Windows">
+12635:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="57690" pluginName="Terminal Services Encryption Level is Medium or Low" pluginFamily="Misc.">
+12695:<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
+2705:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="58453" pluginName="Terminal Services Doesn&apos;t Use Network Level Authentication (NLA)" pluginFamily="Misc.">
+2891:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="18405" pluginName="Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness" pluginFamily="Windows">
+2937:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="57690" pluginName="Terminal Services Encryption Level is Medium or Low" pluginFamily="Misc.">
+3066:<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
+4539:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="18405" pluginName="Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness" pluginFamily="Windows">
+4603:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="57690" pluginName="Terminal Services Encryption Level is Medium or Low" pluginFamily="Misc.">
+4663:<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
+6049:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="18405" pluginName="Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness" pluginFamily="Windows">
+6095:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="57690" pluginName="Terminal Services Encryption Level is Medium or Low" pluginFamily="Misc.">
+6224:<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
+7697:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="18405" pluginName="Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness" pluginFamily="Windows">
+7761:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="57690" pluginName="Terminal Services Encryption Level is Medium or Low" pluginFamily="Misc.">
+7821:<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">
+9207:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="18405" pluginName="Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness" pluginFamily="Windows">
+9253:<ReportItem port="3389" svc_name="msrdp" protocol="tcp" severity="2" pluginID="57690" pluginName="Terminal Services Encryption Level is Medium or Low" pluginFamily="Misc.">
+9382:<ReportItem port="445" svc_name="cifs" protocol="tcp" severity="2" pluginID="57608" pluginName="SMB Signing Disabled" pluginFamily="Misc.">

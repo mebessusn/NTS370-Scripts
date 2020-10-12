@@ -1,0 +1,53 @@
+#!/usr/bin/perl
+
+# Name: Megan Bess
+# Course: NTS370
+# Date: 09OCT10
+# Last Revision: 09OCT10
+
+# ------------------------------------------
+# Purpose:
+# ------------------------------------------
+# This script requests the user to input a file name, 
+# check for it's existence and if it's readable, and then
+# an output file name, and replace text within it.
+# ------------------------------------------
+
+print "Please enter an file name for assessment: ";
+$INPUT = <STDIN>;
+chomp $INPUT;
+
+# if statement to check if file exists and if it's readable
+if (-e $INPUT && -r $INPUT) {
+	print "$INPUT exists!\n";
+} else {
+	print "$INPUT doesn't exist!\n";
+}
+
+# opens the file the user input
+open (INPUT,"$INPUT"); 
+
+print"Enter OUTPUT filename: ";
+$OUTPUT = <> ;
+chomp $OUTPUT;
+
+# if statement to check is chosen output file exists already
+# and takes the contents of the input and puts it in the
+# selected file name/path
+if (-e $OUTPUT && -w $OUTPUT) {
+	print "OUTPUT exists!\n";
+} else {
+	print "OUTPUT doesn't exist!\n";
+}
+open (OUTPUT,">>$OUTPUT");
+
+# while statement that replaces instances of /home to
+# /export/home and then prints the output of the contents
+# of the file to the output selected
+while (<INPUT>) {
+	s/var/export\/home/;
+	print OUTPUT $_;
+}
+
+
+

@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+# Name: Megan Bess
+# Course: NTS370
+# Date: 09OCT20
+# Last Revision: 09OCT20
+
+# Purpose:
+# -----------------------------------------------------------------
+# This script requests the user to request
+# a file to be printed to the screen.
+
+print "Please enter the name of a file you wish to see displayed: ";
+open(NAME,<STDIN>);
+print "---------------------------------------------------------\n";
+print "Thank you, please standby while we fetch your request. :)\n";
+sleep(2);
+print "Your data is ready for viewing!\n\n";
+sleep(1);
+while(<NAME>) {
+	chomp $NAME;
+	print $_;
+}

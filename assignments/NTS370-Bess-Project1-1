@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Name: Megan Bess
+# Date: 05OCT2020
+# Last Revision: 05OCT2020
+
+# This is the first script where we test the use of variables.
+
+student="Megan"
+course="NTS370"
+college="UAT"
+
+echo "Hello $student! You're currently attending $course, at $college."

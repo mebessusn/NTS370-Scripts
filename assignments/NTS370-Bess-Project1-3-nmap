@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Name: Megan Bess
+# Course: NTS370
+# Date: 07OCT2020
+# Last Revision: 07OCT2020
+
+# This script is for allowing the user to input
+# an ip range and run nmap against it.
+
+echo "Enter starting IP address:"
+read start
+
+echo "Enter ending IP address:"
+read end
+
+if [ $start = $end ]
+then
+	echo "You selected two identical IP addresses, please try again."
+else [ $start != $end ]
+	echo "Thank you, please standby while we fetch your results."
+fi
+
+nmap $start-$end > nmapresults

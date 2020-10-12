@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+# Name: Megan Bess
+# Course: NTS370
+# Date: 08OCT20
+# Last Revision: 08OCT20
+
+# Purpose:
+# This script takes a user defined input and chops away
+# one character at a time and prints the remaining
+# output to the screen.
+
+print "Please enter a word that is at least 6 characters in length: ";
+$word = <STDIN>;
+
+chop ($word); # chop removes the last character of the user defined variable
+print "$word\n"; # printing the remainder of the user defined variable
+chop ($word);
+print "$word\n";
+chop ($word);
+print "$word\n";
+chop ($word);
+print "$word\n";
+chop ($word);
+print "$word\n";

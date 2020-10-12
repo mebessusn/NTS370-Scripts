@@ -1,0 +1,65 @@
+#!/bin/bash
+
+# Name: Megan Bess
+# Course: NTS370
+# Date: 11OCT20
+# Last Revision: 11OCT20
+
+# -----------------------------------------------------------
+# Purpose:
+# -----------------------------------------------------------
+# This script is a bash menu that lets the user select from
+# a list of premade scripts in other files to run. This script
+# will loop until the user selects '0' to exit.
+# -----------------------------------------------------------
+
+menu_option_one() {
+	bash ./NTS370-Bess-Project1-2-Parsing.sh
+}
+
+menu_option_two() {
+	grep -i "severity=\"2\"" -n ~/nessus | sort | tee nessus_parse.txt
+}
+
+menu_option_three() {
+	grep -i "Login failure" -n ~/syslog
+}
+
+menu_option_four() {
+	nmap -sV 10.140.1.5 -p 80
+}
+
+press_enter() {
+	echo ""
+	echo -n "	Press Enter to continue "
+	read
+	clear
+}
+
+incorrect_selection() {
+	echo "Incorrect selection! Try again."
+}
+
+until ["$selection" = "0"]; do
+	clear
+	echo ""
+	echo "	Megan's Toolbox v1.0"
+	echo "	----------------------------------"
+	echo "	1 - Parse /etc/passwd"
+	echo "	2 - Nessus HIGH vulnerability scan"
+	echo "	3 - Failed login scan"
+	echo "	4 - nmap software version scan"
+	echo "	0 - Exit"
+	echo ""
+	echo -n " Enter Selection: "
+	read selection
+	echo ""
+case $selection in
+	1) clear ; menu_option_one ; press_enter ;;
+	2) clear ; menu_option_two ; press_enter ;;
+	3) clear ; menu_option_three ; press_enter ;;
+	4) clear ; menu_option_four ; press_enter ;;
+	0) clear ; exit ;;
+	*) clear ; incorrect_selection ; press_enter;;
+esac
+done

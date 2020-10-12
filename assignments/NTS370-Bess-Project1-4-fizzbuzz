@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Name: Megan Bess
+# Course: NTS370
+# Date: 07OCT2020
+# Last Revision: 07OCT2020
+# -------------------------------------
+# Description:
+#
+# This script prints the numbers 1-100
+# and when a number is divisible by 3
+# it prints Fizz, if divisible by 5
+# it prints Buzz, when divisible by both
+# it prints FizzBuzz.
+# -------------------------------------
+# Note: After much research into the many ways to solve this problem and many methods
+#       you can accomplish this task with, I found that there were so many ways to
+#       achieve this with one line commands. Using the sed command turned out to
+#       be the most efficient and neat way to get this done, though it took a lot
+#       of time in the man pages to fully understand how to tweak it enough to
+#       do exactly what I needed. Enjoy!
+
+seq 100 |sed '0~3s/.*/Fizz/;0~5s/[0-9]*$/Buzz/'
